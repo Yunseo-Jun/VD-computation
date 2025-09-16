@@ -26,8 +26,6 @@ function setup() {
 
 function draw() {
   background("white");
-  image(body, 0, 0);
-  image(face, 132, 134);
 
   if (n === 1) {
     background("beige");
@@ -41,4 +39,7 @@ function draw() {
   if (n === 4) {
     background("skyblue");
   }
+
+  image(body, 0, 0);
+  image(face, 132, 134);
 }
