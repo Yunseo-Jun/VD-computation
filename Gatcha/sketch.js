@@ -1,11 +1,12 @@
 let body;
 let face;
+let n;
 
 function preload() {
   body = loadImage('body.png');
 
   // get random face
-  let n = int(random(1, 5));
+  n = int(random(1, 5));
   let imgName = n + ".png";  
   face = loadImage(imgName);
 }
@@ -17,7 +18,7 @@ function setup() {
   button.position(10, 10);
 
   button.mousePressed(() => {
-    let n = int(random(1, 5));
+    n = int(random(1, 5));
     let imgName = n + ".png";
     face = loadImage(imgName);
   });  
@@ -29,18 +30,15 @@ function draw() {
   image(face, 132, 134);
 
   if (n === 1) {
-    document.body.style.backgroundColor = "beige";
-    }
-
+    background("beige");
+  }
   if (n === 2) {
-    document.body.style.backgroundColor = "red";
-    }
-
+    background("red");
+  }
   if (n === 3) {
-    document.body.style.backgroundColor = "pink";
-    }
-
+    background("pink");
+  }
   if (n === 4) {
-    document.body.style.backgroundColor = "skyblue";
-    }
+    background("skyblue");
+  }
 }
