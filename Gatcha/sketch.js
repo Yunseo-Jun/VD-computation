@@ -14,8 +14,8 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
 
-  let button = createButton('🤗');
-  button.position(10, 10);
+  let button = createButton('🤍Moruka🤍');
+  button.position(150, 400);
 
   button.mousePressed(() => {
     n = int(random(1, 5));
@@ -41,5 +41,5 @@ function draw() {
   }
 
   image(body, 0, 0);
-  image(face, 132, 134);
+  image(face, 132, 150);
 }
